@@ -14,25 +14,25 @@ module.exports = async ({ deployments }) => {
 
     
     //deploy Simplecoin
-    const SimpleCoin = await ethers.getContractFactory('SimpleCoin', wallet);
-    console.log('Deploying Simplecoin...');
-    const simpleCoin = await SimpleCoin.deploy(tokensToBeMinted);
-    await simpleCoin.deployed()
-    console.log('SimpleCoin deployed to:', simpleCoin.address);
+    // const SimpleCoin = await ethers.getContractFactory('SimpleCoin', wallet);
+    // console.log('Deploying Simplecoin...');
+    // const simpleCoin = await SimpleCoin.deploy(tokensToBeMinted);
+    // await simpleCoin.deployed()
+    // console.log('SimpleCoin deployed to:', simpleCoin.address);
 
     //deploy FilecoinMarketConsumer
-    const FilecoinMarketConsumer = await ethers.getContractFactory('FilecoinMarketConsumer', wallet);
-    console.log('Deploying FilecoinMarketConsumer...');
-    const filecoinMarketConsumer = await FilecoinMarketConsumer.deploy();
-    await filecoinMarketConsumer.deployed()
-    console.log('FilecoinMarketConsumer deployed to:', filecoinMarketConsumer.address);
+    // const FilecoinMarketConsumer = await ethers.getContractFactory('FilecoinMarketConsumer', wallet);
+    // console.log('Deploying FilecoinMarketConsumer...');
+    // const filecoinMarketConsumer = await FilecoinMarketConsumer.deploy();
+    // await filecoinMarketConsumer.deployed()
+    // console.log('FilecoinMarketConsumer deployed to:', filecoinMarketConsumer.address);
 
-    //deploy DealRewarder
-    const DealRewarder = await ethers.getContractFactory('DealRewarder', wallet);
-    console.log('Deploying DealRewarder...');
-    const dealRewarder = await DealRewarder.deploy();
-    await dealRewarder.deployed()
-    console.log('DealRewarder deployed to:', dealRewarder.address);
+    // //deploy DealRewarder
+    // const DealRewarder = await ethers.getContractFactory('DealRewarder', wallet);
+    // console.log('Deploying DealRewarder...');
+    // const dealRewarder = await DealRewarder.deploy();
+    // await dealRewarder.deployed()
+    // console.log('DealRewarder deployed to:', dealRewarder.address);
     
     //deploy DealClient
     const DealClient = await ethers.getContractFactory('DealClient', wallet);

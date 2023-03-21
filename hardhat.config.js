@@ -17,7 +17,7 @@ module.exports = {
           },
         },
       },
-    defaultNetwork: "Hyperspace",
+    defaultNetwork: "FilecoinMainnet",
     networks: {
         Hyperspace: {
             chainId: 3141,
